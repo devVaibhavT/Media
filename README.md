@@ -1,6 +1,14 @@
-# Hello World React Application
+# Hello World React + Vite Application
 
-A simple React.js application that displays "Hello World".
+A simple and fast React.js application built with **Vite** that displays "Hello World".
+
+## Why Vite?
+
+- ⚡ **Lightning fast** development server
+- 🔄 **Instant HMR** (Hot Module Replacement)
+- 📦 **Optimized builds** with Rollup
+- ⚙️ **Zero config** setup for React
+- 🚀 Much faster than Create React App
 
 ## Getting Started
 
@@ -25,39 +33,48 @@ npm install
 
 Start the development server:
 ```bash
-npm start
+npm run dev
 ```
 
-The application will open in your browser at [http://localhost:3000](http://localhost:3000)
+The application will automatically open in your browser at [http://localhost:3000](http://localhost:3000)
 
 ### Building for Production
 
-Create a production build:
+Create an optimized production build:
 ```bash
 npm run build
 ```
 
-This builds the app for production to the `build` folder.
+The build output will be in the `dist` folder.
+
+### Preview Production Build
+
+Preview the production build locally:
+```bash
+npm run preview
+```
 
 ## Features
 
+- ⚡ Powered by Vite for ultra-fast development
 - Simple React component displaying "Hello World"
-- Beautiful gradient background
+- Beautiful gradient background with animations
 - Responsive design
-- Built with Create React App
+- Optimized build output
 
 ## Project Structure
 
 ```
-├── public/
-│   └── index.html
+.
+├── index.html           # HTML entry point
+├── vite.config.js       # Vite configuration
+├── package.json         # Project dependencies
 ├── src/
-│   ├── App.js
-│   ├── App.css
-│   ├── index.js
-│   └── index.css
-├── package.json
-└── README.md
+│   ├── main.jsx         # React entry point
+│   ├── App.jsx          # Main App component
+│   ├── App.css          # App component styles
+│   └── index.css        # Global styles
+└── README.md            # This file
 ```
 
 ## License
